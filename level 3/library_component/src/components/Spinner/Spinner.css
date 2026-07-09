@@ -1,0 +1,195 @@
+.spinner-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:20px;
+
+}
+
+.fullscreen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.95);
+
+    z-index:9999;
+
+}
+
+/* Spinner */
+
+.nova-spinner{
+
+    border-radius:50%;
+
+    animation:spin .9s linear infinite;
+
+}
+
+/* Circle */
+
+.circle{
+
+    border-style:solid;
+
+    border-color:currentColor;
+
+    border-top-color:transparent;
+
+}
+
+/* Dots */
+
+.dots{
+
+    width:14px;
+
+    height:14px;
+
+    background:currentColor;
+
+    border-radius:50%;
+
+    animation:bounce .8s infinite alternate;
+
+}
+
+/* Sizes */
+
+.small{
+
+    width:25px;
+
+    height:25px;
+
+    border-width:3px;
+
+}
+
+.medium{
+
+    width:40px;
+
+    height:40px;
+
+    border-width:4px;
+
+}
+
+.large{
+
+    width:60px;
+
+    height:60px;
+
+    border-width:5px;
+
+}
+
+.xlarge{
+
+    width:80px;
+
+    height:80px;
+
+    border-width:6px;
+
+}
+
+/* Colors */
+
+.primary{
+
+    color:var(--primary);
+
+}
+
+.secondary{
+
+    color:var(--secondary);
+
+}
+
+.success{
+
+    color:var(--success);
+
+}
+
+.danger{
+
+    color:var(--danger);
+
+}
+
+.warning{
+
+    color:var(--warning);
+
+}
+
+.info{
+
+    color:var(--info);
+
+}
+
+/* Text */
+
+.spinner-text{
+
+    color:var(--text-secondary);
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+/* Animations */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes bounce{
+
+    from{
+
+        transform:scale(.5);
+
+        opacity:.4;
+
+    }
+
+    to{
+
+        transform:scale(1.2);
+
+        opacity:1;
+
+    }
+
+}

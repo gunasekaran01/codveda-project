@@ -1,0 +1,61 @@
+.nova-alert{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    padding:18px 22px;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+    color:white;
+
+}
+
+.nova-alert h4{
+
+    margin-bottom:8px;
+
+}
+
+.success{
+
+    background:var(--success);
+
+}
+
+.danger{
+
+    background:var(--danger);
+
+}
+
+.warning{
+
+    background:var(--warning);
+
+}
+
+.info{
+
+    background:var(--info);
+
+}
+
+.close-btn{
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}

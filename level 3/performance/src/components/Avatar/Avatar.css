@@ -1,0 +1,187 @@
+.avatar-wrapper{
+
+    position:relative;
+
+    display:inline-flex;
+
+    margin:12px;
+
+}
+
+.nova-avatar{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    color:white;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:var(--transition);
+
+}
+
+.nova-avatar:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Sizes */
+
+.small{
+
+    width:40px;
+
+    height:40px;
+
+    font-size:14px;
+
+}
+
+.medium{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:22px;
+
+}
+
+.large{
+
+    width:90px;
+
+    height:90px;
+
+    font-size:32px;
+
+}
+
+.xlarge{
+
+    width:120px;
+
+    height:120px;
+
+    font-size:40px;
+
+}
+
+/* Shape */
+
+.nova-avatar:not(.square){
+
+    border-radius:50%;
+
+}
+
+.square{
+
+    border-radius:12px;
+
+}
+
+/* Image */
+
+.nova-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* Variants */
+
+.primary{
+
+    background:var(--primary);
+
+}
+
+.secondary{
+
+    background:var(--secondary);
+
+}
+
+.success{
+
+    background:var(--success);
+
+}
+
+.danger{
+
+    background:var(--danger);
+
+}
+
+.warning{
+
+    background:var(--warning);
+
+}
+
+.info{
+
+    background:var(--info);
+
+}
+
+/* Status */
+
+.status{
+
+    position:absolute;
+
+    bottom:5px;
+
+    right:5px;
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    border:3px solid white;
+
+}
+
+.online{
+
+    background:#22c55e;
+
+}
+
+.offline{
+
+    background:#9ca3af;
+
+}
+
+.busy{
+
+    background:#ef4444;
+
+}
+
+.away{
+
+    background:#f59e0b;
+
+}

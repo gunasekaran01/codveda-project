@@ -1,0 +1,179 @@
+.progress-wrapper{
+
+    margin:25px 0;
+
+}
+
+.progress-track{
+
+    width:100%;
+
+    height:16px;
+
+    background:#e2e8f0;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    transition:.5s;
+
+}
+
+/* Variants */
+
+.primary{
+
+    background:var(--primary);
+
+}
+
+.secondary{
+
+    background:var(--secondary);
+
+}
+
+.success{
+
+    background:var(--success);
+
+}
+
+.danger{
+
+    background:var(--danger);
+
+}
+
+.warning{
+
+    background:var(--warning);
+
+}
+
+.info{
+
+    background:var(--info);
+
+}
+
+/* Label */
+
+.progress-label{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-weight:600;
+
+}
+
+/* Striped */
+
+.striped{
+
+    background-image:
+
+    linear-gradient(
+
+    45deg,
+
+    rgba(255,255,255,.2) 25%,
+
+    transparent 25%,
+
+    transparent 50%,
+
+    rgba(255,255,255,.2) 50%,
+
+    rgba(255,255,255,.2) 75%,
+
+    transparent 75%,
+
+    transparent
+
+    );
+
+    background-size:40px 40px;
+
+}
+
+/* Animated */
+
+.animated{
+
+    animation:move 1s linear infinite;
+
+}
+
+@keyframes move{
+
+0%{
+
+background-position:0 0;
+
+}
+
+100%{
+
+background-position:40px 0;
+
+}
+
+}
+
+/* Circular */
+
+.nova-progress-circle{
+
+    position:relative;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.progress-bg{
+
+    fill:none;
+
+    stroke:#e2e8f0;
+
+    stroke-width:10;
+
+}
+
+.progress-value{
+
+    fill:none;
+
+    stroke-width:10;
+
+    stroke-linecap:round;
+
+    transform:rotate(-90deg);
+
+    transform-origin:center;
+
+    transition:.6s;
+
+}
+
+.circle-label{
+
+    position:absolute;
+
+    font-weight:bold;
+
+}

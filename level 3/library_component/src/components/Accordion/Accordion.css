@@ -1,0 +1,93 @@
+.nova-accordion{
+
+    width:100%;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.accordion-item{
+
+    border:1px solid var(--border);
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    background:white;
+
+}
+
+.accordion-header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+    border:none;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+    transition:var(--transition);
+
+}
+
+.accordion-header:hover{
+
+    background:#f8fafc;
+
+}
+
+.accordion-icon{
+
+    font-size:24px;
+
+    color:var(--primary);
+
+}
+
+.accordion-content{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+    background:#ffffff;
+
+}
+
+.accordion-content.open{
+
+    max-height:300px;
+
+}
+
+.accordion-content p{
+
+    padding:20px;
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}

@@ -1,0 +1,59 @@
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:rgba(15, 23, 42, 0.95);
+
+box-shadow:var(--shadow);
+
+z-index:1000;
+
+}
+
+.navbar-content{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 0;
+
+}
+
+.navbar h2{
+
+color:var(--primary);
+
+}
+
+nav{
+
+display:flex;
+
+gap:30px;
+
+}
+
+nav a{
+
+color:var(--text);
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--primary);
+
+}

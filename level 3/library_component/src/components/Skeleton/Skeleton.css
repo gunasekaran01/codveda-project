@@ -1,0 +1,59 @@
+.nova-skeleton{
+
+    background:linear-gradient(
+
+        90deg,
+
+        #e2e8f0 25%,
+
+        #f8fafc 50%,
+
+        #e2e8f0 75%
+
+    );
+
+    background-size:200% 100%;
+
+    animation:loading 1.4s infinite;
+
+    margin:10px 0;
+
+}
+
+.text{
+
+    border-radius:6px;
+
+}
+
+.circle{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+}
+
+.card{
+
+    border-radius:16px;
+
+}
+
+@keyframes loading{
+
+0%{
+
+background-position:200% 0;
+
+}
+
+100%{
+
+background-position:-200% 0;
+
+}
+
+}

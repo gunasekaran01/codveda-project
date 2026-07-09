@@ -1,0 +1,216 @@
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    overflow-x:hidden;
+}
+
+/* Sections */
+
+section{
+    padding:100px 10%;
+    position:relative;
+}
+
+/* Container */
+
+.container{
+    max-width:1300px;
+    margin:auto;
+}
+
+/* Titles */
+
+.section-title{
+    font-size:48px;
+    font-weight:700;
+    text-align:center;
+    color:#ffffff;
+    margin-bottom:20px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#94a3b8;
+    font-size:18px;
+    margin-bottom:70px;
+    line-height:1.8;
+}
+
+/* Buttons */
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:15px 32px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+}
+
+.btn:hover{
+    background:#ffffff;
+    color:#2563eb;
+    transform:translateY(-4px);
+}
+
+.btn.outline{
+    background:transparent;
+    color:#60a5fa;
+    border:2px solid #3b82f6;
+}
+
+.btn.outline:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* Cards */
+
+.card,
+.feature-card,
+.service-card,
+.testimonial-card,
+.contact-form,
+.stat-card{
+
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* Inputs */
+
+input,
+textarea{
+
+    width:100%;
+    background:#0f172a;
+    color:#ffffff;
+    border:1px solid #334155;
+    border-radius:10px;
+    padding:15px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:#3b82f6;
+    box-shadow:0 0 0 4px rgba(37,99,235,.25);
+
+}
+
+/* Links */
+
+a{
+
+    color:#cbd5e1;
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:#60a5fa;
+
+}
+
+/* Icons */
+
+.icon{
+
+    color:#3b82f6;
+
+}
+
+/* Images */
+
+img{
+
+    max-width:100%;
+    height:auto;
+    display:block;
+    border-radius:18px;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#3b82f6;
+
+}
+
+/* Text Selection */
+
+::selection{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+/* Smooth Animations */
+
+*{
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+section{
+
+padding:70px 6%;
+
+}
+
+.section-title{
+
+font-size:36px;
+
+}
+
+.section-subtitle{
+
+font-size:16px;
+
+}
+
+}

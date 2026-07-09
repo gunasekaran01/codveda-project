@@ -1,0 +1,351 @@
+@import "./variables.css";
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Scroll */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+
+    font-family:var(--font-family);
+
+    background:var(--background);
+
+    color:var(--text-primary);
+
+    line-height:1.6;
+
+}
+
+/* Images */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* Lists */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* Buttons */
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+}
+
+/* Inputs */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+/* Container */
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+/* Layout */
+
+.docs-layout{
+
+    display:flex;
+
+    min-height:calc(100vh - 70px);
+
+}
+
+/* Main Content */
+
+.content{
+
+    flex:1;
+
+    padding:40px;
+
+}
+
+/* Sections */
+
+.component-section{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-lg);
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* Section Title */
+
+.component-section h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+
+}
+
+/* Description */
+
+.component-description{
+
+    color:var(--text-secondary);
+
+    margin-bottom:25px;
+
+}
+
+/* Example Area */
+
+.example-box{
+
+    background:#f1f5f9;
+
+    border:1px solid var(--border);
+
+    padding:30px;
+
+    border-radius:var(--radius-md);
+
+    margin-bottom:25px;
+
+}
+
+/* Code Block */
+
+.code-box{
+
+    background:#0f172a;
+
+    color:#22c55e;
+
+    padding:25px;
+
+    border-radius:var(--radius-md);
+
+    overflow:auto;
+
+    font-family:Consolas, monospace;
+
+    font-size:15px;
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 0;
+
+}
+
+/* Hero Title */
+
+.hero h1{
+
+    font-size:64px;
+
+    color:var(--primary);
+
+}
+
+/* Hero Subtitle */
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:var(--text-secondary);
+
+}
+
+/* Install Box */
+
+.install-box{
+
+    margin:35px auto;
+
+    width:350px;
+
+    background:#111827;
+
+    color:#22c55e;
+
+    padding:18px;
+
+    border-radius:var(--radius-md);
+
+    font-family:Consolas, monospace;
+
+    font-size:18px;
+
+    text-align:center;
+
+}
+
+/* Grid */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+/* Card */
+
+.demo-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.demo-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.docs-layout{
+
+    flex-direction:column;
+
+}
+
+.content{
+
+    padding:25px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.install-box{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.component-section{
+
+    padding:20px;
+
+}
+
+.component-section h2{
+
+    font-size:26px;
+
+}
+
+}

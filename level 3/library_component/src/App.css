@@ -1,0 +1,197 @@
+/* App.css */
+
+.app{
+
+    min-height:100vh;
+
+    background:var(--background);
+
+}
+
+/* Documentation Layout */
+
+.docs-layout{
+
+    display:flex;
+
+    min-height:calc(100vh - 70px);
+
+}
+
+/* Main Content */
+
+.content{
+
+    flex:1;
+
+    padding:40px;
+
+    overflow-y:auto;
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    padding:40px 0 60px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    color:var(--text-secondary);
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+/* Install Command */
+
+.install-box{
+
+    width:340px;
+
+    margin:auto;
+
+    background:#111827;
+
+    color:#22c55e;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-family:Consolas, monospace;
+
+    font-size:17px;
+
+}
+
+/* Component Sections */
+
+.component-section{
+
+    margin-bottom:45px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.component-section h2{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.component-description{
+
+    color:var(--text-secondary);
+
+    margin-bottom:25px;
+
+}
+
+/* Example */
+
+.example-box{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    padding:25px;
+
+    background:#f8fafc;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+}
+
+/* Code Preview */
+
+.code-box{
+
+    background:#0f172a;
+
+    color:#22c55e;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    font-family:Consolas, monospace;
+
+    overflow:auto;
+
+}
+
+/* Grid */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.docs-layout{
+
+flex-direction:column;
+
+}
+
+.content{
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.install-box{
+
+width:100%;
+
+}
+
+}
